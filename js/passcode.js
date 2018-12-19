@@ -5,7 +5,7 @@ function passWord() {
         if (!pass1) 
             history.go(-1);
         if (pass1.toLowerCase() == "6137") {
-            // alert('Access Granted');
+            alert('Access Granted! You have 30 seconds to finish this quiz! Our relationship depends on it! \nYour time will start as soon as you hit OK');
             window.open('second.html', '_self');
             break;
         } 
