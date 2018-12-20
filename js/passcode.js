@@ -46,23 +46,22 @@ function secondAns() {
 function thirdAns() {
     var testV = 1;
     var pass1 = prompt('Your answer here ','');
-    while (testV < 3) {
+    while (testV < 2) {
         if (!pass1) {
-            alert('You forgot where we first kissed!');
-            pass1 = prompt('You should know this one! ','');
+            pass1 = prompt('Just give me your best guess ','');
             continue;
         }
-        if (pass1.toLowerCase().includes("triangle")) {
-            // alert('Access Granted');
+        if (pass1.toLowerCase().includes("red")) {
+            alert('Thank you for remembering correctly!');
             window.open('fourth.html', '_self');
             break;
-        } 
-        testV+=1;
-        if (pass1.toLowerCase().includes("triangle") & testV == 3){
-            alert('Nvm, go home!');
-            window.go(-3);
         }
-        var pass1 = prompt('Incorrect response, Please Try Again.','');
+        if (pass1.toLowerCase().includes("orange")) {
+            alert('It was RED!');
+            window.open('fourth.html', '_self');
+            break;
+        }
+        var pass1 = prompt('Just give me your best guess ','');
     }
     return " ";
 } 
@@ -72,51 +71,45 @@ function fourthAns() {
     var pass1 = prompt('Your answer here ','');
     while (testV < 2) {
         if (!pass1) {
-            pass1 = prompt('Just give me your best guess ','');
+            pass1 = prompt('Your answer here ','');
             continue;
         }
-        if (pass1.toLowerCase().includes("red")) {
-            alert('Thank you for remembering correctly!');
+        if (pass1.toLowerCase().includes("oasis")) {
             window.open('sixth.html', '_self');
             break;
         }
-        if (pass1.toLowerCase().includes("orange")) {
-            alert('It was RED!');
-            window.open('sixth.html', '_self');
-            break;
-        }
-        var pass1 = prompt('Just give me your best guess ','');
+        var pass1 = prompt('Your answer here ','');
     }
     return " ";
 }
 
 function fifthAns() {
     var testV = 1;
-    var pass1 = prompt('...doing what? ','');
+    var pass1 = prompt('Your answer here ','');
     while (testV < 3) {
         if (!pass1) {
             pass1 = prompt('I am not much of a hand holder...\nBut I am! ','');
             continue;
         }
-        if (pass1.toLowerCase().includes("hand")) {
+        if (pass1.toLowerCase().includes("avocado")) {
             // alert('Access Granted');
             window.open('third.html', '_self');
             break;
         } 
-        var pass1 = prompt('You have to answer this one ','');
+        var pass1 = prompt('You have to answer this one to proceed! ','');
     }
     return " ";
 }
 
 function sixthAns() {
     var testV = 1;
-    var pass1 = prompt('Where did we go? ','');
+    var pass1 = prompt('Name the beach ','');
     while (testV < 3) {
         if (!pass1) {
-            pass1 = prompt('HINT: It starts with an S and ends with an O! ','');
+            pass1 = prompt('HINT: It starts with a B! ','');
             continue;
         }
-        if (pass1.toLowerCase().includes("fran")) {
+        if (pass1.toLowerCase().includes("baker")) {
             alert('I cannot believe we did that! Go big or go home right? Many more trips to come in the future!');
             window.open('seventh.html', '_self');
             break;
