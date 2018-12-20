@@ -22,19 +22,19 @@ function secondAns() {
     var pass1 = prompt('What is your answer? ','');
     while (testV < 3) {
         if (!pass1) {
-            alert('Come on, you know this one!');
+            alert('Surely you remember!');
             pass1 = prompt('What is your answer? ','');
             continue;
         }
-        if (pass1.toLowerCase() == "something is different") {
+        if (pass1.toLowerCase().includes("white")) {
             // alert('Access Granted');
             window.open('fifth.html', '_self');
             break;
         } 
         testV+=1;
         var pass1 = prompt('Incorrect response, Please Try Again.','');
-        if (pass1.toLowerCase()!="something is different" & testV == 3){
-            alert('Come on, you know this one!');
+        if (!pass1.toLowerCase().includes("white") & testV == 3){
+            alert('You have to answer this one!');
             pass1 = prompt('What is your answer? ','');
             testV = 0;
             continue;
