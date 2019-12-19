@@ -128,7 +128,7 @@ function seventhAns() {
             continue;
         }
         if (pass1.toLowerCase().includes("yes")) {
-            alert('I love you too! Use the coordinates on the next page to find me. Hurry cause I am here probably freezing to death!');
+            alert('I love you too! Your anniversary present(s) await!');
             window.open('final.html', '_self');
             break;
         } 
